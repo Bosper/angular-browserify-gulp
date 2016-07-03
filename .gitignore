@@ -1,0 +1,26 @@
+
+Remove OS files:
+.DS_Store
+.DS_Store?
+._*
+.sass-cache
+Thumbs.db
+
+#Remove miscellaneous:
+.idea/
+.htaccess
+
+#Remove node modules:
+/node_modules/*
+
+#Remove build file:
+/public/js/*
+/public/css/*
+/public/bin/*
+
+#Remove libs files:
+/public/libs/*
+
+#Swagger
+../../../frontend/src/swagger/
+../../../frontend/src/swagger/API/Client/*

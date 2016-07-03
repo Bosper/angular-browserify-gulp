@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/master.css" media="screen" charset="utf-8">
+    <title>APP</title>
+  </head>
+  <body>
+    <div class="container" ng-controller="Controller">
+      <h1>Welcome to Browserify APP! <i class="glyphicon glyphicon-sd-video" aria-hidden="true"></i><i class="fa fa-2x fa-taxi"></i></h1>
+      <input type="text" ng-model="test" placeholder="{{ message }}" />{{ test }}
+    </div>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<button type="button" name="button" class="btn btn-info-color"> Hallo BAMBI!! </button>
+
+    <script type="text/javascript" src="bin/bundle.js"></script>
+  </body>
+</html>

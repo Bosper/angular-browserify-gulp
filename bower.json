@@ -1,0 +1,23 @@
+{
+  "name": "angular-browserify-gulp",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Grzegorz Lechowski <Grzegorz.Lechowski@alior.pl>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "jquery": "1.12.4",
+    "bootstrap-sass": "^3.3.6"
+  }
+}

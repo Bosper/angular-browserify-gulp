@@ -1,0 +1,52 @@
+//Calculate width
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+//REM Calculate
+@function calculateRem($size) {
+  $remSize: $size / 16;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+//Media query
+@mixin mobile {
+  @media ( max-width: #{$mobile-width} ) {
+    @content;
+  }
+}
+
+@mixin small-devices {
+  @media ( max-width: #{$tablet-width - 1px} ){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and ( max-width: #{$desktop-width - 1px} ) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+//Clear
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
